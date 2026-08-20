@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/interactions",
+      "dest": "/api/interactions.js"
+    },
+    {
+      "src": "/api/midtrans-webhook",
+      "dest": "/api/midtrans-webhook.js"
+    }
+  ],
+  "functions": {
+    "api/interactions.js": {
+      "maxDuration": 10
+    },
+    "api/midtrans-webhook.js": {
+      "maxDuration": 10
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "discord-digital-store-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot untuk jual produk digital & donasi via Midtrans QRIS - deployed ke Vercel",
+  "main": "index.js",
+  "scripts": {
+    "register": "node scripts/register-commands.js",
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "axios": "^1.6.5",
+    "midtrans-client": "^1.3.1",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "license": "MIT"
+}
